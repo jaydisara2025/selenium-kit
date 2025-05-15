@@ -32,6 +32,8 @@ public class SampathBankEX extends DRIVETRAIN {
     public void sampath_bank_uk_gbp_tt_buying_rate() throws IOException {
         LocalDateTime now = LocalDateTime.now();
 
+        System.out.println("[DEBUG] SampathBankEX method started.");
+
         navigate_to(SAMPATH_BANK_WEB);
         assert_url(SAMPATH_BANK_WEB);
         element_click_js_if_visible_else_skip("adroll_allow_all");
