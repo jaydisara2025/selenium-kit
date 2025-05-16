@@ -34,6 +34,9 @@ public class SampathBankEX extends DRIVETRAIN {
 
         System.out.println("[DEBUG] SampathBankEX method started.");
 
+        System.out.println("This is a debug message from the feature branch.");
+
+
         navigate_to(SAMPATH_BANK_WEB);
         assert_url(SAMPATH_BANK_WEB);
         element_click_js_if_visible_else_skip("adroll_allow_all");
